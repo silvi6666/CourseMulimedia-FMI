@@ -1,0 +1,30 @@
+{
+  "name": "02-es6-features_lap",
+  "version": "1.0.0",
+  "description": "es6 async await promise demo",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server", 
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvi6666/CourseMulimedia-FMI.git"
+  },
+  "keywords": [
+    "es6",
+    "async",
+    "await",
+    "promise",
+    "demo"
+  ],
+  "author": "Silviya Nedelcheva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/silvi6666/CourseMulimedia-FMI/issues"
+  },
+  "homepage": "https://github.com/silvi6666/CourseMulimedia-FMI#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
