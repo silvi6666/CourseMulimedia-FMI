@@ -1,0 +1,9 @@
+
+<div class="errors" *ngIf="errors">{{errors}}</div>
+
+<ul class="items">
+  <li *ngFor="let blogpost of blogposts; let i = index;" (click)="selectBlogPost(blogposts)"
+    [class.selected]="blogpost === selectedBlogPost" >
+    <span class="badge">{{i + 1}}</span> {{blogpost.title}} - {{blogpost.description}} - {{blogpost.price}}
+  </li>
+</ul>

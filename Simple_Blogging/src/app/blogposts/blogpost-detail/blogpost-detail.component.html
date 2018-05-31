@@ -1,0 +1,29 @@
+<form #form="ngForm" (ngSubmit)="submitBlogPost()" class="blogpost-form">
+  <mat-form-field class="input-full-width">
+    <input matInput type="text" placeholder="Blog Post ID" name="id" disabled 
+      [ngModel]="editedBlogPost.id" />
+  </mat-form-field>
+  <mat-form-field class="input-full-width">
+    <input matInput type="text" required placeholder="Title" name="title" 
+      [(ngModel)]="editedBlogPost.title" />
+  </mat-form-field>
+  <mat-form-field class="input-full-width">
+    <input matInput type="date" required placeholder="Date" name="date" 
+      [(ngModel)]="editedBlogPost.date" />
+  </mat-form-field>
+  <mat-form-field class="input-full-width">
+    <input matInput type="text" required placeholder="Title" name="title" 
+      [(ngModel)]="editedBlogPost.title" />
+  </mat-form-field>
+  <mat-form-field class="input-full-width">
+    <input matInput type="text" required placeholder="Image URL" name="imageURL" 
+      [(ngModel)]="editedBlogPost.imageURL" />
+  </mat-form-field>
+  <!-- <select name="status" [(ngModel)]="editedBlogPost.status">
+      <option *ngFor="let type of Status.values();"> {{status}} </option>
+  </select> -->
+  <button type="submit" mat-raised-button color="primary"
+    [disabled]="form.pristine || form.invalid">Submit</button>
+  <button type="button" mat-raised-button color="warn" (click)="resetBlogPost()">Reset</button>
+  <button type="button" mat-raised-button (click)="cancel()">Cancel</button>
+</form>
